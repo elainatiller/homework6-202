@@ -1,0 +1,269 @@
+/*Begin your code here*/
+/*Requirement 1*/
+body{
+  font-family: 'Raleway', sans-serif; /*backup sans*/
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; 
+  background-image: url('../images/concrete_seamless.png');
+  
+}
+
+header{
+  background: #fff;
+  border-bottom: 3px solid #50C7C7;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*Your  code here again.*/
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+
+/*Requirement 3*/
+.nav_links{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /*Your code here again.*/
+}
+
+h1{
+  font-size: 1.6em;
+  text-align: center;
+}
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1em;
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+h2{
+text-align: center;
+}
+
+a.skip {
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  top: -50px;
+  position: absolute;
+
+  /*Your code here*/
+}
+a.skip:focus{
+  top: 10px;
+  position: absolute;
+}
+*:focus{
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+
+}
+/*Requirement 4*/
+.price {
+    min-height: 500px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*Your code here*/
+    /*You must use flex.
+    /*Don't forget to vertically and horizontally 
+    align the element*/
+
+}
+
+/*Requirement 5*/
+.package {
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  /*Your code here.*/
+  /*Take a look at flex-basis*/
+  flex-basis: 400px;
+
+
+}
+
+/*Requirement 6*/
+/**  UNCOMMENT THIS CODE ONCE YOU
+/**  HAVE THE SELECTOR
+*/
+ .package >header{
+  background: #288080;
+  border: 2px solid #45ADAD;
+  padding: 20px 0;
+  border-radius: 7px 7px 0 0;
+}
+.package > ul li {
+  padding: 0;
+  width: 80%;
+  margin: 25px;
+  font-size: .8em;
+}
+.package  > ul{
+  list-style: none;
+}
+.package > button{
+  border: 0;
+  margin-left: 40px;
+  width: 80%;
+  height: 35px;
+  border:0;
+  background: #288080;
+  border: 2px solid #45ADAD;
+  color: white;
+  font-size: 1em;
+  /* border-radius: 7px; */
+}
+.package h3{
+  font-size: 2em;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Requirement 7*/
+.gallery{
+  display: flex;
+  min-height: 600px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /*Your code here again.*/
+  justify-content: center;
+
+}
+
+/* Requirement 8*/
+
+.gallery > img{
+  border: 10px #50C7C7 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+
+/*Requirement 9*/
+#logo{
+   /*Your code here.*/
+   animation-name: logo_grow;
+   animation-duration: 15s;
+   animation-iteration-count: 1;
+   display: block;
+
+ 
+}
+
+/*Keyframes for animation*/
+@-webkit-keyframes logo_grow{
+  from {
+    width: 25px;
+    opacity: 0;
+  }
+  to {
+    width: 420px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes logo_grow{
+  from {
+    width: 25px;
+    opacity: 0;
+  }
+  to {
+    width: 420px;
+    opacity: 1;
+  }
+
+} 
+
+@media screen and (min-width: 850px){
+
+  /*Requirement 10*/
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /*Your code here again.*/  
+  }
+
+  /*Requirement 10*/
+  .nav_links{
+    flex-direction: row;
+    gap: 10px;
+    /*Your code here again.*/  
+  }
+
+
+  /*Requirement 11*/
+  .package {
+    flex-basis: 230px;
+    /*Your code here again.*/
+  } 
+}
+
+/*Requirement 12*/
+/*Add media query to handle reduced-motion*/
+/*Your code here again.*/ 
+@media screen and (prefers-reduced-motion: reduce){
+  #logo {
+    animation: none;
+
+  }
+}
+
+
+@media print { 
+  header {
+    background-image: none;
+  }
+  .card {
+    flex-basis: 200px;
+  }
+  .nav_item a{
+    width: 100%;
+  }
+  /* Edit the nav_links elements so that they are spaced according to the image below. */
+  .nav_links {
+    align-items: flex-start;
+    flex-direction:row;
+  }
+  .price {
+    align-items: flex-start;
+    flex-direction:row;
+  }
+  .package {
+    border:2px solid #45ADAD;
+    flex-basis: 200px;
+  }
+  .gallery {
+    display: None;
+  }
+  /*Requirement 13*/
+  /*Requirement 14*/
+  /*Requirement 15*/
+  /*Requirement 16*/
+  /*Requirement 17*/
+  /*Requirement 18*/
+ 
+}
+
