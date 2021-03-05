@@ -18,15 +18,6 @@ header{
   align-items: center;
   /*Your  code here again.*/
 }
-footer{
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  
-}
-
 
 /*Requirement 3*/
 .nav_links{
@@ -36,45 +27,8 @@ footer{
   /*Your code here again.*/
 }
 
-h1{
-  font-size: 1.6em;
-  text-align: center;
-}
-p {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 1em;
-}
 
-.nav_item a{
-  color: black;
-  text-decoration: none;
-}
-h2{
-text-align: center;
-}
 
-a.skip {
-  background: white;
-  left: 0;
-  padding: 7px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-  top: -50px;
-  position: absolute;
-
-  /*Your code here*/
-}
-a.skip:focus{
-  top: 10px;
-  position: absolute;
-}
-*:focus{
-  border-top: 2px dashed black;
-  border-bottom: 2px dashed black;
-
-}
 /*Requirement 4*/
 .price {
     min-height: 500px;
@@ -112,33 +66,7 @@ a.skip:focus{
   padding: 20px 0;
   border-radius: 7px 7px 0 0;
 }
-.package > ul li {
-  padding: 0;
-  width: 80%;
-  margin: 25px;
-  font-size: .8em;
-}
-.package  > ul{
-  list-style: none;
-}
-.package > button{
-  border: 0;
-  margin-left: 40px;
-  width: 80%;
-  height: 35px;
-  border:0;
-  background: #288080;
-  border: 2px solid #45ADAD;
-  color: white;
-  font-size: 1em;
-  /* border-radius: 7px; */
-}
-.package h3{
-  font-size: 2em;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 /*Requirement 7*/
 .gallery{
