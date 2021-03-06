@@ -161,30 +161,33 @@ header{
 
 
 @media print { 
-  header {
+  body {
     background-image: none;
+
   }
-  .card {
+  .package {
     flex-basis: 200px;
-  }
-  .nav_item a{
-    width: 100%;
+    border: 2px solid #45ADAD
   }
   /* Edit the nav_links elements so that they are spaced according to the image below. */
   .nav_links {
     align-items: flex-start;
     flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
   }
-  .price {
+  .nav_item a {
+    width: 100%;
+  }
+  .pricing{
     align-items: flex-start;
     flex-direction:row;
   }
-  .package {
-    border:2px solid #45ADAD;
-    flex-basis: 200px;
-  }
   .gallery {
     display: None;
+  }
+  #gallery{
+    display: none;
   }
   /*Requirement 13*/
   /*Requirement 14*/
