@@ -14,7 +14,6 @@ header{
   border-bottom: 3px solid #50C7C7;
   display:flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   /*Your  code here again.*/
 }
@@ -22,7 +21,7 @@ header{
 /*Requirement 3*/
 .nav_links{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   /*Your code here again.*/
 }
@@ -60,7 +59,7 @@ header{
 /**  UNCOMMENT THIS CODE ONCE YOU
 /**  HAVE THE SELECTOR
 */
- .package >header{
+ .package > header{
   background: #288080;
   border: 2px solid #45ADAD;
   padding: 20px 0;
@@ -76,17 +75,16 @@ header{
   align-items: flex-start;
   /*Your code here again.*/
   justify-content: center;
+  align-content: stretch;
 
 }
 
 /* Requirement 8*/
-
 .gallery > img{
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
 }
-
 
 /*Requirement 9*/
 #logo{
@@ -94,7 +92,10 @@ header{
    animation-name: logo_grow;
    animation-duration: 15s;
    animation-iteration-count: 1;
-   display: block;
+   -webkit-animation-duration: 15s;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-name: logo_grow;
+   /* display: block; */
 
  
 }
@@ -174,14 +175,14 @@ header{
     align-items: flex-start;
     flex-direction:row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-  .nav_item a {
+  nav{
     width: 100%;
   }
-  .pricing{
-    align-items: flex-start;
-    flex-direction:row;
+  .price {
+    align-items: flex-end;
+    /* flex-direction:row; */
   }
   .gallery {
     display: None;
@@ -189,6 +190,7 @@ header{
   #gallery{
     display: none;
   }
+
   /*Requirement 13*/
   /*Requirement 14*/
   /*Requirement 15*/
